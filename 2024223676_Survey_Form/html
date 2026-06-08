@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+
+<body>
+  <h1 id="title">User Survey</h1>
+  <p id="description">Please give us some useful feedback</p>
+
+  <form id="survey-form">
+
+    <label id="name-label" for="name">Name:</label><br>
+    <input 
+      id="name"
+      type="text"
+      required
+      placeholder="Enter your name"><br><br>
+
+    <label id="email-label" for="email">Email:</label><br>
+    <input 
+      id="email"
+      type="email"
+      required
+      placeholder="Enter your email"><br><br>
+
+    <label id="number-label" for="number">Age:</label><br>
+    <input 
+      id="number"
+      type="number"
+      min="10"
+      max="100"
+      placeholder="Enter your number"><br><br>
+
+    <label for="dropdown">Select your role:</label><br>
+    <select id="dropdown">
+       <option value="Option">Select your role</option>
+      <option value="worker">Worker</option>
+      <option value="student">Student</option>
+    </select><br>
+
+    <p>Do you like Computer Science?</p>
+    <input type="radio" name="course" value="yes"> Yes
+    <input type="radio" name="course" value="no"> No<br>
+
+    <p>Do you like coding?</p>
+    <input type="radio" name="coding" value="yes"> Yes
+    <input type="radio" name="coding" value="no"> No<br>
+
+    <p>Would you like to enroll to our course?</p>
+    <input type="checkbox" value="yes"> Yes
+    <input type="checkbox" value="no"> No<br>
+
+    <p>Comments:</p>
+    <textarea placeholder="Enter your comment here"></textarea><br>
+
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>
