@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <h1 id="title">User Survey</h1>
+  <h1 id="title">Course Survey</h1>
   <p id="description">Please give us some useful feedback</p>
 
   <form id="survey-form">
