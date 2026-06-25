@@ -3,33 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>Harith | Web Developer Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <nav id="navbar">
-    <a href="#welcome-section">About</a>
-    <a href="#project-section">Work</a>
-    <a id="profile-link" href="https://github.com" target="_blank">GitHub</a>
+    <div class="nav-brand">H</div>
+    <div class="nav-links">
+      <a href="#welcome-section" class="word">About</a>
+      <a href="#project-section" class="word">Work</a>
+      <a id="profile-link" href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
   </nav>
 
-  <section id="welcome-section">
-    <h1>Hey, I am Harith a Web Developer</h1>
-    <p>Welcome to my portfolio</p>
-  </section>
+  <main>
+    <section id="welcome-section">
+      <h1>Hey, I am <span class="highlight">Harith</span></h1>
+      <p>A Web Developer crafting modern, high-performance web experiences.</p>
+    </section>
 
-  <section id="project-section">
-    <h2>Some of my projects</h2>
-    
-    <a href="https://codepen.io" class="project-tile" target="_blank">
-      <p class="project-title">Project 1: Tribute Page</p>
-    </a>
+    <section id="project-section">
+      <h2>Some of my projects</h2>
+      
+      <div class="projects-grid">
+        <a href="https://codepen.io" class="project-tile" target="_blank" rel="noopener noreferrer">
+          <div class="project-preview thumbnail-tribute"></div>
+          <div class="project-info">
+            <p class="project-title">Tribute Page</p>
+            <span class="project-tag">HTML & CSS</span>
+          </div>
+        </a>
 
-    <a href="https://codepen.io" class="project-tile" target="_blank">
-      <p class="project-title">Project 2: Technical Documentation</p>
-    </a>
-  </section>
+        <a href="https://codepen.io" class="project-tile" target="_blank" rel="noopener noreferrer">
+          <div class="project-preview thumbnail-doc"></div>
+          <div class="project-info">
+            <p class="project-title">Technical Documentation</p>
+            <span class="project-tag">Responsive Design</span>
+          </div>
+        </a>
+
+        <a href="https://codepen.io" class="project-tile" target="_blank" rel="noopener noreferrer">
+          <div class="project-preview thumbnail-landing"></div>
+          <div class="project-info">
+            <p class="project-title">Product Landing Page</p>
+            <span class="project-tag">UI/UX & Forms</span>
+          </div>
+        </a>
+
+        <a href="https://codepen.io" class="project-tile" target="_blank" rel="noopener noreferrer">
+          <div class="project-preview thumbnail-survey"></div>
+          <div class="project-info">
+            <p class="project-title">Survey Form</p>
+            <span class="project-tag">HTML Form Validation</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
 
 </body>
 </html>
